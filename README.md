@@ -7,8 +7,3 @@
 
 ## 🗂️ Repository Structure
 문제 난이도와 제목을 기준으로 디렉토리를 구성합니다.
-
-├── Easy
-├── Medium
-├── Hard
-└── README.md
