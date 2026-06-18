@@ -1,0 +1,19 @@
+# include <stdio.h>
+
+int jump(int* nums, int numsSize) {
+    int jumps = 0;
+    int end = 0;
+    int maxIndex = 0;
+
+    for (int i = 0; i < numsSize - 1; i++) {
+        if (i + nums[i] > maxIndex) 
+            maxIndex = i + nums[i];
+
+        if (i == end) {
+            jumps++;
+            end = maxIndex;
+        }
+    }
+
+    return jumps;
+}
