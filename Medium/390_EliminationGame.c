@@ -1,0 +1,10 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int lastRemaining(int n) {
+    if (n == 1)
+        return 1;
+
+    else 
+        return 2 * (1 + n / 2 - lastRemaining(n / 2));
+}
